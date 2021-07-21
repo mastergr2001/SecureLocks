@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel=icon href=images/favicon.ico>
+    <title>SecureLock-Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>Login Page</h1>
+      </div>
+    </header>
+
+    <!-- Form -->
+    <section>
+      <form id="loginForm">
+        <div class="wrapper">
+          <div class="usr_input">
+            <label for="usr">username</label>
+            <div class="spacer"></div>
+            <input type="text" id="usr" placeholder="username" />
+          </div>
+
+          <div class="pwd_input">
+            <label for="pwd">password</label>
+            <div class="spacer"></div>
+            <input type="password" id="pwd" placeholder="••••••••••" />
+          </div>
+        </div>
+        <div class="button_input">
+          <button type="submit" class="button" id="formSubmit">Submit</button>
+          <div class="spacer"></div>
+          <a href="admin_auth.html">Admin</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

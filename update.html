@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel=icon href=images/favicon.ico>
+    <title>Control Panel</title>
+  </head>
+  <body>
+    <h1 class="heading">Control Panel</h1>
+    <section>
+      <form id="adminForm">
+        <div class="wrapper">
+          <div class="usr_input">
+            <label for="usr">update username</label>
+            <div class="spacer"></div>
+            <input
+              type="text"
+              id="updateusr"
+              placeholder="new username"
+              required
+            />
+          </div>
+
+          <div class="pwd_input">
+            <label for="pwd">udpate password</label>
+            <div class="spacer"></div>
+            <input
+              type="password"
+              id="updatepwd"
+              placeholder="new password"
+              required
+            />
+          </div>
+        </div>
+        <div class="button_input">
+          <button type="submit" class="button" id="updatesubmit">Update</button>
+          <div class="spacer"></div>
+          <a href="index.html">Logout</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script> -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="scripts/update.js"></script>
+  </body>
+</html>
